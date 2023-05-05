@@ -22,9 +22,15 @@ public class Miniräknare {
         System.out.println("Välj tecken");
         tecken = teckenscan.next();
 
-        if (tecken == "+");
+        if (tecken.equals("+"))
         {
-            System.out.println("Svar:" + (number1 + number2));
+            System.out.println(number1 + "+" + number2 + "=" + (number1 + number2));
+        } else if (tecken.equals("-")) {
+            System.out.println(number1 + "-" + number2 + "=" + (number1 - number2));
+        } else if (tecken.equals("*")) {
+            System.out.println(number1 + "*" + number2 + "=" + (number1 * number2));
+        } else if (tecken.equals("/")) {
+            System.out.println(number1 + "/" + number2 + "=" + (number1 / number2));
         }
     }
 }
