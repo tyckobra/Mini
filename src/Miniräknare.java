@@ -1,36 +1,39 @@
 import java.util.Scanner;
+import java.util.LinkedList;
+import java.util.List;
+
 
 public class Miniräknare {
     public static void main(String[] args) {
 
-        String tecken;
         int numbers;
 
-        System.out.println("Hur många nummer?");
-        {
-            Scanner number = new Scanner(System.in);
-            for (numbers = 0; numbers == Integer.parseInt(number.next()); numbers++)
-            {
-                System.out.println(number + " nummer");
-                numbers = number.nextInt();
-            }
+        Scanner n = new Scanner(System.in);
+
+        System.out.println("Hur många nummer?");{
+            //for (numbers = 0; numbers == Integer.parseInt(n.next()); numbers++) {
+                numbers = n.nextInt();
+                System.out.println(numbers + " antal nummer");
         }
 
-        /*
-        System.out.println("Andra nummret");
-        number2 = number.nextInt();
-        */
+        System.out.println("Vilka nummer?");
+        int nu;
+            for (nu = 0; nu < numbers; nu++ ) {
+                n.nextInt();
+            }
+
+        String tecken;
 
         Scanner teckenscan = new Scanner(System.in);
 
         System.out.println("Välj tecken");
         tecken = teckenscan.next();
 
-        /*
-       if (tecken.equals("+"))
+        if (tecken.equals("+"))
         {
-            System.out.println(n + "+" + n + "=" + (n + n));
-        } else if (tecken.equals("-")) {
+            System.out.println();
+        }
+       /*else if (tecken.equals("-")) {
             System.out.println(number1 + "-" + number2 + "=" + (number1 - number2));
         } else if (tecken.equals("*")) {
             System.out.println(number1 + "*" + number2 + "=" + (number1 * number2));
