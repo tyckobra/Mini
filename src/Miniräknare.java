@@ -21,16 +21,16 @@ public class Miniräknare {
             for (nu = 0; nu < numbers; nu++ ) {
                 n.nextInt();
             }
+        System.out.println("Dina nummer:" + nu);
+
 
         String tecken;
-
         Scanner teckenscan = new Scanner(System.in);
-
         System.out.println("Välj tecken");
         tecken = teckenscan.next();
 
-        if (tecken.equals("+"))
-        {
+
+        if (tecken.equals("+")) {
             System.out.println();
         }
        /*else if (tecken.equals("-")) {
